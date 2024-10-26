@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+    line-height: 1.2;
+    @apply text-tormenta-400;
+  }
+  body {
+    @apply antialiased;
+  }
+  h1 {
+    @apply text-h1;
+  }
+  h2 {
+    @apply text-h2;
+  }
+  h3 {
+    @apply text-h3;
+  }
+  h4 {
+    @apply text-h4;
+  }
+  h5 {
+    @apply text-h5;
+  }
+  h6 {
+    @apply text-h6;
+  }
+  strong {
+    font-weight: bold;
+  }
+}
+
+@layer utilities {
+  .dot {
+    @apply flex h-3 w-3 items-center justify-center bg-oceano-300;
+    font-size: 0.6rem;
+    content: '';
+    border-radius: 1rem;
+  }
+}
+
+:root {
+  --header-z-index: 200;
+  --sidebar-container-z-index: 800;
+  --popover-container-z-index: 900;
+  --modal-container-z-index: 1000;
+}
